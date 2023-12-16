@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="5px">
+            <th>pkno</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Author</th>
+         {% for W in access %}
+          <tr>
+            <td>{{ w.pk }}</td>
+            <td>{{ W.name }}</td>
+            <td>{{ W.date }}</td>
+            <td>{{ W.Author }}</td>
+
+          </tr>
+         {% endfor %} 
+        </table>
+
+
+    </center>
+    
+</body>
+</html>
